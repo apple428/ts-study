@@ -17,3 +17,16 @@
 // • 2 ≦ N ≦ 100,000
 // • 0 ≦ Ai ≦ 1,000,000,000
 // • 入力中の値はすべて整数である。
+
+let stdin = [3, 10, 12, 9];
+
+for(let i = 1; i < stdin.length - 1; i++){
+    let result = stdin[i+1] - stdin[i];
+    if(result > 0){
+        console.log("up" + " " + result);
+    }else if(result === 0){
+        console.log("stay");
+    }else{
+        console.log("down" + " " + result * -1);
+    }
+}
